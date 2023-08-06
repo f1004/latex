@@ -46,22 +46,23 @@
 
 \title[ ]{Deadbeat Predictive Torque Control of Dual \\Three-Phase PMSM with Low Ripple\\ Based on Geometric Principle}
 \author[1]{\fnm{Shuang} \sur{Wang}}\email{wang-shuang@shu.edu.cn}
-\author[2]{\fnm{Ying} \sur{Zhang}}\email{1773587252@shu.edu.cn}
-\author*[1]{\fnm{Jianfei} \sur{Zhao}}\email{jfzhao@shu.edu.cn}
-\author[1]{\fnm{Deliang} \sur{Wu}}\email{wudeliang@shu.edu.cn}
+% 其他作者...
 
-\affil[1]{School of Mechatronic Engineering and Automation, Shanghai University, Shanghai, China}
+\affil[1]{\orgdiv{School of Mechatronic Engineering and Automation}, \orgname{Shanghai University},  \city{Shanghai, \postcode{200444}, \country{China}}}
 
 \begin{document}
 
+
 \abstract{The conventional predictive torque control (PTC) suffers from the heavy torque ripple and uncertainty of the weighting factor. This article proposes a deadbeat predictive torque control (DB-PTC) scheme with low torque ripple for a dual three-phase permanent magnet synchronous motor (PMSM), in which no cost function is required. Meanwhile, a novel duration time calculation method is proposed based on the geometric principle. First, the reference voltage vector (RVV) is obtained by the principle of  the deadbeat direct torque and flux control (DB-DTFC). To avoid the computational burden, the nearest virtual voltage vector (VVV) is selected directly without the cost function. Subsequently, the torque ripple can be further reduced by calculating the corresponding action time based on the introduced geometric relationship in the volt-sec coordinate. Finally, experimental results illustrate the effectiveness of torque ripple reduction method under different working conditions.}
-\keywords{Permanent magnet synchronous motor (PMSM), dual three-phase machine, predictive torque control (PTC), torque ripple, virtual voltage vector (VVV).}
+
+
+\keywords{Permanent magnet synchronous motor (PMSM), dual three-phase machine, predictive torque control (PTC), torque ripple, virtual voltage vector (VVV)}
 
 \maketitle
 \printacronyms[name = Abbreviations, sort = true]
+\ac{c}, \ac{h}.
 
-
-
+% 正文部分...
 \section{Introduction}\label{sec1}
  
 \sethlcolor {yellow} Multi-phase electric devices have been widely applied in industry and academia because of the distinct merits of high safety redundancy and low torque ripple \cite{inbook},\cite{7110356}. Particularly, among various types of multi-phase machines, dual three-phase PMSM has received extensive attention, especially in safety-critical situations, such as electric vehicles\cite{8036279}, high-speed elevators\cite{6170558}, electric ship propulsion\cite{6469209}, wind energy conversion systems\cite{7781416}, etc. For the high performance of multi-phase drives, effective control schemes are required to regulate the speed, currents and flux of the system. Compared with traditional vector control (VC) and direct torque control (DTC), the model predictive control (MPC) has become a research hotspot in the field of motor drive and power electronic control due to its inherent advantage of intuitive implementation, fast dynamic response, and flexibility to incorporate multi-objective control problems and system nonlinearities\cite{7733147}. Compared with VC, MPC obtains a better dynamic response since it does not need the current loop parameter, and directly generates the inverter drive signals\cite{5784326}. PTC can be regarded as the evolution of DTC, in which the hysteresis controller is replaced by the predictive controller while the cost function optimization takes over the switch table.Differing from the DTC, it is more accurate in voltage vector selection, which can pick out the optimal voltage vector with the minimum cost function\cite{8936566}.However, challenges exist when PTC is applied on multi-phase machines.The following issues need to be addressed:
@@ -592,4 +593,3 @@ All authors read and approved the final manuscript.
 
 \bibliography{bibliography}
 \end{document}
-
